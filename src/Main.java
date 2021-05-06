@@ -36,9 +36,5 @@ public class Main {
             }
         }
         writer.close();
-
-
-
-
     }
 }
