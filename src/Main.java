@@ -28,7 +28,7 @@ public class Main {
 
         FileWriter writer = new FileWriter("result.txt");
 
-        Pattern pattern = Pattern.compile("SOLVE_TASK|DONE_TASK");
+        Pattern pattern = Pattern.compile("^(SOLVE_TASK|DONE_TASK)");
         for (Log l:logList) {
             Matcher matcher = pattern.matcher(l.getEvent());
             if (matcher.find()) {
